@@ -1,0 +1,42 @@
+%% @theme default
+graph TD
+    %% Definición de Estilos para Claridad Visual
+    classDef aiConcept fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    classDef dataField fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    classDef resource fill:#fffde7,stroke:#f57f17,stroke-width:2px,color:#f57f17
+    classDef abstract fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#4a148c
+    classDef legend_compact fill:#f8f9fa,stroke:#dee2e6,stroke-width:1px,color:#495057
+
+    %% Concepto Abstracto Origen
+    I(🧠 Inteligencia):::abstract
+
+    %% Jerarquía Principal anidada para mostrar subconjuntos
+    subgraph SG_AI [🤖 Inteligencia Artificial]
+        subgraph SG_ML [⚙️ Machine Learning]
+            DL(Deep Learning)
+        end
+    end
+
+    %% Campo Aplicado
+    subgraph SG_DS [📊 Ciencia de Datos]
+        DM(⛏️ Minería de Datos)
+    end
+
+    %% Recurso Externo
+    BD(📦 Big Data):::resource
+
+    %% Relaciones
+    I --> SG_AI
+    SG_DS -.->|Aplica / Utiliza| SG_ML
+    DM <-.->|Fuerte Solapamiento| SG_ML
+    BD --> SG_DS
+    BD --> SG_ML
+
+    %% Leyenda (versión ultracompacta)
+    Legend("<b>Leyenda</b><br>─── Jerarquía<br>- - - Relación"):::legend_compact
+
+    %% Asignación de Estilos a los Nodos
+    class I abstract
+    class SG_AI,SG_ML,DL aiConcept
+    class SG_DS,DM dataField
+    class BD resource
