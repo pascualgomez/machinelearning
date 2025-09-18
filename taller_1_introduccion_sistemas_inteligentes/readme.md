@@ -1,3 +1,6 @@
+# Taller 1: Introducción a Sistemas Inteligentes
+Repositorio: https://github.com/pascualgomez/machinelearning/tree/main/taller_1_introduccion_sistemas_inteligentes
+
 # Pregunta 1:
 ## Enunciado:
 
