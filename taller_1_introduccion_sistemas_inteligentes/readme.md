@@ -1,5 +1,16 @@
 # Pregunta 1:
 
+## Enunciado:
+
+Utilice un modelo grande de lenguaje (LLM) —tal como ChatGPT, Bard o Bing— para obtener una descripción breve de los siguientes términos:
+- Big data
+- Machine learning
+- Inteligencia artificial
+- Ciencia de datos (data science)
+- Deep learning
+- Minería de datos (data mining)
+- Inteligencia 
+
 ## Prompt: 
 Eres un experto en inteligencia artificial y aprendizaje automático. Por favor, proporciona definiciones breves, precisas y claras de los siguientes términos, adecuadas para un curso universitario introductorio de Aprendizaje de Máquina aplicado:
 
